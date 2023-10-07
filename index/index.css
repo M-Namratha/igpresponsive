@@ -1,0 +1,422 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Clear any floats to prevent layout issues */
+.content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#bnr{
+
+}
+
+#mainDiv {
+  width: 100%;
+  display: inline-block;
+}
+
+h1 {
+  color: green;
+  text-align: center;
+}
+
+.blog {
+  width: 23.5%;
+  float: left;
+  height: 200px;
+  margin: 0.5%;
+  box-shadow: 12px 10px 12px #6cabd7;
+  
+}
+
+.blog img {
+  width: 100%;
+  height: 200px
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.blog:hover .image {
+  opacity: 0.2;
+}
+
+.blog:hover .middle {
+  opacity: 1;
+}
+
+.carousel-inner :hover .image {
+  opacity: 0.3;
+}
+.carousel-inner :hover .middle {
+  opacity: 1;
+}
+
+
+.card :hover .image {
+  opacity: 0.3;
+}
+.card :hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #04AA6D;
+  color: rgb(147, 82, 82);
+  font-size: 16px;
+  padding: 20px 32px;
+  border-radius: 10px;
+}
+
+#bnr {
+  margin-top: 130px;
+  height: 150px;
+  width: 100%;
+  border: 10px 20px solid #e777b6;
+  border-bottom-left-radius: 20px;
+}
+
+.jumbotron {
+  display: block;
+}
+
+.card {
+  height: 200px;
+  background-color: skyblue;
+  width: 20%;
+  float: left;
+  margin: 2%
+  
+  
+}
+
+
+.card img {
+  width: 100%;
+  height: 200px
+}
+
+#rows{ 
+  margin-top: 90px;
+  display: block;
+  
+}
+
+.div{
+  display: inline-block;
+  border-block: 2px solid rgb(173, 62, 173);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #c4d478;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 150px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #e3b0e8;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 76px;
+  border: none;
+  font-size: 17px;
+}
+
+figcaption {
+  background-color: black;
+  height: 28px;
+  color: white;
+  font-family: italic;
+}
+
+.center {
+  margin: auto;
+  border-radius: 10px 10px;
+  height: 130px;
+  width: 95%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.imgSlider {
+  width: 100%;
+  height: 500px !important;
+}
+
+#tileBox{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tileContainer{
+  height:180px;
+  width:30%;
+  margin-left: 2%;
+  margin-top: 3%;
+  display: flex;
+  box-shadow: 10px 10px 10px #e777b6;
+  
+}
+
+
+
+.tileContainer:hover{
+  transform:scale(0.8)
+
+}
+
+.tileComponent1{
+  width:52%;
+}
+
+.tileComponent1 > img{
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.tileComponent2{
+  width:45%;
+  margin-left: 3%;
+  margin-top: 5%;
+}
+
+.compHeading{
+  font-size: 25px;
+  font-weight: bold;
+ 
+}
+
+.compHeading > a{
+  color:#762251 !important;
+}
+
+.compSubHeading{
+  font-size: 16px;
+  color:rgb(36, 32, 32)  
+}
+
+
+@media screen and (max-width:1600px){
+  body{
+      background-color: rgb(241, 168, 168);
+  }
+}
+
+@media screen and (max-width:1400px){
+  body{
+      background-color: rgb(241, 226, 168);
+  }
+}
+
+
+@media screen and (max-width:1200px){
+  body{
+      background-color: rgb(207, 241, 168);
+  }
+}
+
+@media screen and (max-width:1100px){
+  body{
+      background-color: rgb(168, 241, 209);
+  }
+}
+
+@media screen and (max-width:1021px){
+  body{
+      background-color: rgb(168, 208, 241);
+  }
+  .tileContainer{
+      width:45%;
+  }
+
+}
+
+@media screen and (max-width:800px){
+  body{
+      background-color: rgb(195, 168, 241);
+  }
+}
+
+@media screen and (max-width:700px){
+  body{
+      background-color: rgb(241, 168, 234);
+  }
+
+  .tileContainer{
+      width:90%;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+border: solid;
+border-radius: 1px 5px;
+border-top-right-radius: 3px;
+width: 100%;
+}
+
+.col-1 {width: 12.5%;}
+.col-2 {width: 12.5%;}
+.col-3 {width: 12.5%;}
+.col-4 {width: 12.5%;}
+.col-5 {width: 12.5%;}
+.col-6 {width: 12.5%;}
+.col-7 {width: 12.5%;}
+.col-8 {width: 12.5%;}
+
+
+
